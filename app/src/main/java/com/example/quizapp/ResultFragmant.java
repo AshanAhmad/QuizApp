@@ -11,11 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class ResultFragment extends Fragment {
+public class ResultFragmant extends Fragment {
     private MyDatabaseHelper databaseHelper;
     private TextView resultTextView;
 
-    public ResultFragment() {
+    public ResultFragmant() {
         // Required empty public constructor
     }
 
@@ -28,7 +28,7 @@ public class ResultFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_result, container, false);
+        View view = inflater.inflate(R.layout.fragment_result_fragmant, container, false);
         resultTextView = view.findViewById(R.id.result_text_view);
         displayResults();
         return view;

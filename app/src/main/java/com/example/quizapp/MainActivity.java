@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (itemId == R.id.menu_result) {
                 // Handle the "Result" menu item click
-                loadFragment(new ResultFragment());
+                loadFragment(new ResultFragmant());
                 return true;
             } else if (itemId == R.id.menu_test) {
                 // Handle the "Test" menu item click

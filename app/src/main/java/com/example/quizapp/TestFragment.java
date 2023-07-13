@@ -79,9 +79,9 @@ public class TestFragment extends Fragment {
 
     private void checkAnswer(String expectedAnswer) {
         if (answerString.equals(expectedAnswer)) {
-            answerTextView.setText("Awesome! Your answer is right");
+            answerTextView.setText("Your answer is right");
         } else {
-            answerTextView.setText("Incorrect! The answer is " + answerString);
+            answerTextView.setText("Incorrect The answer is " + answerString);
         }
 
         questionCounter++;
@@ -114,7 +114,7 @@ public class TestFragment extends Fragment {
     }
 
     private void navigateToResultFragment() {
-        ResultFragment resultFragment = new ResultFragment();
+        ResultFragmant resultFragment = new ResultFragmant();
         getActivity().getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_container, resultFragment)
                 .commit();
